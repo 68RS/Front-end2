@@ -6,6 +6,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.felinos {
+  color: gray;
+}
+
 body {
   background-color: rgb(219, 219, 219);
 }
@@ -14,7 +18,11 @@ h1 {
   padding: .5em 1em;
   background-color: white;
   border-bottom: 1px solid lightgrey;
-  color: grey;
+  color: rgb(255, 254, 254);
+}
+
+#btn {
+  background-color: lightgrey;
 }
 
 .container {
@@ -27,9 +35,6 @@ h1 {
 
 .item {
   width: 30em;
-  background-color: rgb(19, 19, 19);
-  border-color: black;
-  color: rgb(230, 230, 230);
   box-sizing: border-box;
   padding: 1.5em;
   margin-bottom: 1em;
@@ -46,21 +51,32 @@ h1 {
   margin-bottom: .2em;
 }
 
-.dark {
+.dark  {
   background-color: #fff; 
-    color: rgb(39, 39, 39); 
-}
+    color: rgb(39, 39, 39);
+  }
+
+  .dark-mode .container {
+    background-color: rgb(19, 19, 19);
+    border-color: black;
+    color: rgb(230, 230, 230);
+  }
 
 .dark-mode {
     background-color: rgb(39, 39, 39); 
-    color: #000; 
-}
+    color: #000;
+    
+  }
 
-.felinos { 
+.dark-mode .felinos {
   background-color: rgb(19, 19, 19);
   color: rgb(170, 170, 170);
   border-color: black;
 }
+
+
+
+
 
 /* ------------------------------ Estilos para o tema escuro (Dark-Mode) ----------------------------------------------- */
 

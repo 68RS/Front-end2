@@ -9,14 +9,17 @@
     <script src="./main.js" defer></script>
 </head>
 <body>
+
     <header class="main-reader">
 
         <span>Logo</span>
 
-        <nav>
+        <nav id="mainMenu">
+
+        
             <ul>
                 <li>
-                    <button onclick="closeMenu">Fechar menu</button>
+                    <button onclick="closeMenu()">Fechar menu</button>
                 </li>
 
                 <li>
@@ -37,7 +40,8 @@
             </ul>
         </nav>
 
-        <button onclick="openMenu()">Abrir menu</button>
+        <button onclick="changeMenuVisibility()">Abrir menu</button>
+        
     </header>
 </body>
 </html>

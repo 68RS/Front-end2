@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -22,7 +25,7 @@ body {
 .main-reader span {
 
     color: white;
-
+    font-size: 32px;
 }
 
 .main-reader nav ul {
@@ -49,11 +52,21 @@ gap: 24px;
 
 }
 
+@media (min-width: 600px) {
+
+    .main-header button {
+
+        display: none;
+        
+    }
+    
+}
 
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
     .main-reader nav {
+
         width: 400px;
         height: 100px;
         background-color: #1a99d4b9;
@@ -62,6 +75,26 @@ gap: 24px;
         left: -400px;
         backdrop-filter: blur (4px);
         padding: 32px;
+        transition: all .6s;
+
+    }
+
+    .main-header nav.opened {
+
+        left: 0;
+
+    }
+
+    .main-header ul {
+
+        flex-direction: column;
+
+    }
+
+    .main-header li a {
+
+        opacity: 1;
+
     }
 }
 

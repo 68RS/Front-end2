@@ -1,6 +1,6 @@
 const mainMenuRef = document.querySelector ('#mainMenu')
 
-function changeMViusibility() {
+function changeMenuVisibility() {
 
     mainMenuRef.classList.toggle('opened')
 }
