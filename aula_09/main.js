@@ -8,4 +8,16 @@ let userName = ''
 
 nomeInputRef.addEventListener('keyup', (event) => {
     
+    const inputValue = event.target.value
+
+    userName = inputValue
+
+})
+
+formularioButonRef.addEventListener('click', (event) => {
+
+    event.preventDefault()
+
+    console.log(userName)
+
 })
